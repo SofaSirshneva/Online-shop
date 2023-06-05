@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+    <link rel="stylesheet" href="/Новая папка/st.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Diamand.ru</title>
+
+    <script>
+        function filterSelection(c){
+            var x, i, k, k1=false;
+            x = document.getElementsByClassName("el");
+            if (c == "all")
+            for (i = 0; i < x.length; i++)
+                x[i].style.display = "";
+            else
+            for (i = 0; i < x.length; i++) {
+                k=x[i].classList.contains(c);
+                if(i>0)
+                    k1=x[i-1].classList.contains(c);
+                if (k || k1)
+                    x[i].style.display = "";
+                else{
+                    x[i].style.display = "none";
+                }
+                }
+            } 
+    </script>
+</head>
+<body>
+        <table class="table">
+            <caption style="color:blue; font-size: 40px;" > Каталог</caption>
+            <tr></tr>
+            <tr><th><div id="myBtnContainer">
+                <button class="button" onclick="filterSelection('all')"> Показать все</button>
+                <button class="button" onclick="filterSelection('b')"> Белое золото</button>
+                <button class="button" onclick="filterSelection('k')"> Красное золото</button>
+                <button class="button" onclick="filterSelection('s')"> Серебро</button>
+              </div></th></tr>
+
+            <tr class="el b">
+                <th colspan="3">
+                    <img src="/Новая папка/p3.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i1') }}" target="frame">Золотые серьги с топазами и бриллиантами</a>
+                </th>
+                <th style="width: 100px;">
+                    18990 руб.
+                </th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el b">
+                <th colspan="3">
+                    <img src="/Новая папка/p4.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i2') }}" target="frame">Золотые серьги с сапфирами и бриллиантами</a>
+                </th>
+                <th>34000 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+    
+            <tr class="el b">
+                <th colspan="3">
+                    <img src="/Новая папка/p5.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i5') }}" target="frame">Золотые серьги с жемчугом и бриллиантами</a>
+                </th>
+                <th>
+                    41990 руб.
+                </th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el b">
+                <th colspan="3"> 
+                    <img src="/Новая папка/p6.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i6') }}" target="frame">Золотые серьги с топазами и бриллиантами</a>
+                </th>
+                <th>
+                    16990 руб.
+                </th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el k">
+                <th colspan="3">
+                    <img src="/Новая папка/p7.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i3') }}" target="frame">Золотое кольцо с гранатом и бриллиантами</a>
+                </th>
+                <th>15000 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el k">
+                <th colspan="3">
+                    <img src="/Новая папка/p8.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i4') }}" target="frame">Золотая подвеска с гранатом</a>
+                </th>
+                <th>2990 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+            
+            <tr class="el k">
+                <th colspan="3">
+                    <img src="/Новая папка/p9.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i7') }}" target="frame">Золотое кольцо с гранатом и бриллиантами</a>
+                </th>
+                <th>10490 руб.</th>
+                <th><button class="button">Купить</button></th></tr>  
+            </tr>
+
+            <tr class="el k">
+                <th colspan="3">
+                    <img src="/Новая папка/p10.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i8') }}" target="frame">Золотые серьги с гранатом и фианитами</a>
+                </th>
+                <th>12490 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el s">
+                <th colspan="3">
+                    <img src="/Новая папка/p11.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i10') }}" target="frame">Серебряные серьги</a>
+                </th>
+                <th>1500 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el s">
+                <th colspan="3">
+                    <img src="/Новая папка/p12.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i9') }}" target="frame">Серебряное кольцо с топазом</a>
+                </th>
+                <th>1790 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el s">
+                <th colspan="3">
+                    <img src="/Новая папка/p13.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i11') }}" target="frame">Серебряное кольцо с бриллиантами</a>
+                </th>
+                <th>3190 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+
+            <tr class="el s">
+                <th colspan="3">
+                    <img src="/Новая папка/p14.jpg" width="400px"> 
+                </th>
+                <tr class="el"><th>
+                    <a href="{{ route('static_page', 'i12') }}" target="frame">Серебряные серьги с фианитами</a>
+                </th>
+                <th>1290 руб.</th>
+                <th><button class="button">Купить</button></th></tr>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

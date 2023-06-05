@@ -1,0 +1,282 @@
+body{
+	background-color: #f8f8f8;
+}
+
+.head
+{
+    color: rgb(5, 5, 233);
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+
+.item{
+    text-align: center;
+    display: inline-block;
+    max-width: 180px;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 4rem;
+}
+
+.cart{
+    display: inline-block;
+    max-width: 350px;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.item img{
+    min-width: 15%;
+}
+
+.logo{
+    text-indent: 80px;
+    font-size: 50px;
+    padding-left: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.registr{
+    text-align: right;
+    margin-left: auto;
+}
+
+.button{
+    display: inline-block;
+  background: #2196f3;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.razdel {
+    font-style: italic;
+    text-align: center;
+    flex: 1;
+  }
+
+.razdel a{
+    text-decoration:none;
+    color:blue;
+}
+
+.razdel :hover{
+    color:black;
+}
+
+.str{
+    line-height: 25px;
+    font-style: italic;
+    text-align: center;
+}
+.str a{
+    text-decoration:none;
+    color: blue;
+}
+
+.str :hover{
+    color:black;
+}
+
+.text{
+    line-height: 25px;
+    margin-left: 17%;
+    text-indent: 20px;
+    text-align: left;
+}
+
+.table{
+    margin: auto;
+}
+
+.show {
+    display: block;
+  }
+
+footer {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+
+  textarea{
+    width: 500px;
+    height: 250px;
+  }
+
+div.tabbed {
+    margin-top: 150px;
+}
+
+
+div.tabs a {
+	font-family: Cursive;
+	color: #0585c1;
+    font-size: 30px;
+    margin-right: 2px;
+    padding: 0px 2px;
+}
+
+div.tab {
+    display: none;
+    height: 300px;
+    overflow-y:scroll;
+}
+
+div.tab:target {
+    display: block;
+}
+
+:target div.tab {
+    display: block;
+}
+:target div.tab + div.tab{
+    display: inline-flex; 
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+ }
+ 
+ h3 {
+     font-size: 18px;
+     font-weight: 500;
+     color: #33363b;
+ }
+ 
+ p{
+     font-size: 14px;
+     color: #868d9b;
+ }
+ 
+ .card {
+     width: 360px;
+     height: auto;
+     background-color: #ffffff;
+     margin: 0 auto;
+     margin-top: 80px;
+     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .card-profile-img {
+     color: transparent;
+     position: relative;
+     border: 2px solid #ffffff;
+     border-radius: 120px;
+     margin: 0 auto;
+     margin-bottom: 2rem;
+     
+ }
+ 
+ .label {
+     cursor: pointer;
+     width: 120px;
+     height: 120px;
+ }
+ 
+ .card-profile-img input {
+     display: none;
+ }
+ 
+ span {
+     display: inline-flex;
+     padding: .2em;
+     height: 2em;
+     color: white;
+   }
+ 
+ .user-details p {
+     margin-bottom: 20px;
+     margin-top: -5px;
+ }
+ 
+ .user-details h3 {
+     margin-top: 10px;
+ }
+ 
+ .user-info label {
+     display: inline-block;
+     text-align: left;
+     font-size: 0.8rem;
+ }
+ 
+ .user-info input {
+     width: 80%;
+     height: 40px;
+     background: transparent;
+     outline: none;
+     color: black;
+     border: 1px solid rgba(101, 105, 137, 0.18);;
+     box-sizing: border-box;
+     border-radius: 12px;
+     margin-bottom: 1rem;
+ }
+ 
+ .btn {
+     width: 100%;
+     border: none;
+     outline: none;
+     border-radius: 4px;
+     background-color: #24c5a1;
+     color: #ffffff;
+     cursor: pointer;
+     text-align: center;
+     font-size: 14px;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
